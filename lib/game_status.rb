@@ -21,7 +21,7 @@ WIN_COMBINATIONS = [
       b = win_combination[1]
       c = win_combination[2]
       
-      if board[a] == board[b] && board[a] == board[c] && board[a] != " "
+      if board[a] == board[b] && board[a] == board[c] && position_taken?(board, a)
         return win_combination
       end
     end
